@@ -1,0 +1,106 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 16px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.editor-section {
+  margin-top: 24px;
+}
+
+.editor-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.editor-and-issues {
+  display: flex;
+  gap: 16px;
+}
+
+.code-editor,
+.issues-panel {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.code-area {
+  font-family: monospace;
+}
+
+.code-line {
+  display: flex;
+  align-items: flex-start;
+}
+
+.line-number {
+  width: 32px;
+  text-align: right;
+  margin-right: 8px;
+  color: #888;
+}
+
+.code-line textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  resize: none;
+  overflow: hidden;
+}
+
+.line-error {
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+.line-warning {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.line-security {
+  background-color: rgba(255, 0, 255, 0.08);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 8px;
+}
+
+.summary-report {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.suggestion {
+  font-style: italic;
+}
+
+.severity {
+  font-size: 0.9em;
+  color: #555;
+}
